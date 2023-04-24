@@ -90,7 +90,8 @@ export class AzureADUsersList implements INodeType {
 				// console.log(items[0].json.clientId);
 
 				// ---------------------------------------------- USER CATCH ----------------------------------------------------
-
+				
+				require('isomorphic-fetch');
 				const {
 					Client
 				} = require("@microsoft/microsoft-graph-client");
